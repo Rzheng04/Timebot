@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TimeBot</title>
+
+  <style>
+    :root {
+      --bg: #020617;
+      --card: #0f172a;
+      --border-subtle: #1e293b;
+      --text-primary: #e5e7eb;
+      --text-secondary: #9ca3af;
+      --accent: #2b6cb0;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      min-height: 100vh;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      padding: 40px 18px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(circle at top, #0f172a 0, #020617 60%);
+      color: var(--text-primary);
+    }
+
+    .container {
+      width: 100%;
+      max-width: 750px;
+      background: linear-gradient(135deg, rgba(15,23,42,0.97), rgba(15,23,42,0.92));
+      border: 1px solid rgba(148,163,184,0.2);
+      border-radius: 24px;
+      padding: 32px 24px 36px;
+      box-shadow: 0 30px 90px rgba(15,23,42,0.8);
+    }
+
+    header {
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: #e5e7eb;
+      letter-spacing: 0.04em;
+    }
+
+    h1 span {
+      color: var(--accent);
+    }
+
+    .author {
+      margin-top: 8px;
+      font-size: 1rem;
+      color: var(--text-secondary);
+      font-weight: 500;
+    }
+
+    .description {
+      margin-top: 20px;
+      font-size: 0.95rem;
+      line-height: 1.65;
+      color: #e5e7eb;
+    }
+
+    .section {
+      margin-top: 26px;
+      padding: 18px 16px;
+      border-radius: 16px;
+      background: rgba(15,23,42,0.85);
+      border: 1px solid rgba(148,163,184,0.25);
+      text-align: center;
+    }
+
+    .section strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 0.9rem;
+      letter-spacing: 0.02em;
+      color: #bfdbfe;
+    }
+
+    .commands-link {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 8px 16px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: #bfdbfe;
+      text-decoration: none;
+      border-radius: 999px;
+      border: 1px solid rgba(59,130,246,0.5);
+      background: linear-gradient(
+        135deg,
+        rgba(30,64,175,0.35),
+        rgba(15,23,42,0.9)
+      );
+      transition: all 0.2s ease;
+    }
+
+    .commands-link:hover {
+      transform: translateY(-1px);
+      border-color: rgba(96,165,250,0.8);
+      color: #e0f2fe;
+      box-shadow: 0 0 0 2px rgba(37,99,235,0.2);
+    }
+
+    .tagline {
+      margin-top: 12px;
+      font-size: 0.8rem;
+      color: var(--text-secondary);
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1><span>Time</span>Bot</h1>
+      <p class="author">by Ray Zheng</p>
+
+      <p class="description">
+        Hi! I’m Ray Zheng, a third-year Computer Science student at Northeastern University.
+        I built TimeBot as a personal project to help teams and communities organize their schedules more efficiently.
+        <br><br>
+        Many people rely on Discord to manage events, clubs, and practices, but keeping track of everything across
+        channels and servers quickly becomes messy. TimeBot integrates directly with Google Calendar, allowing users
+        to schedule events, submit availability, and receive reminders all in Discord.
+        <br><br>
+        What started as a tool for varsity esports scheduling has grown into a flexible system for any group that
+        needs clean, organized time management inside their server.
+      </p>
+    </header>
+
+    <div class="section">
+      <strong>All implemented commands as of 10/31/2025</strong>
+      <a class="commands-link" href="commands.html">View TimeBot Commands →</a>
+    </div>
+
+    <div class="tagline">
+      Built with Discord.js · Node.js · Google Calendar API
+    </div>
+  </div>
+
+</body>
+</html>
